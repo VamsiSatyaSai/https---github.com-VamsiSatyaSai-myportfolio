@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand navbar-light bg-light fixed-top">
+    <h1 class="navbar-logo"><span>V</span>amsi.</h1>
+    <ul class="navbar-list">
+      <li class="nav-item">
+        <a class="nav-link active" href="#Home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#About">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact Me</a>
+      </li>
+    </ul>
+  </nav>
+  <section id="Home" class="home-section">
+    <div class="home-section-content-container">
+      <h1 class="home-section-title">Vamsi Satya Sai</h1>
+      <p>I'm a</p>
+      <span id="element"></span>
+      <div><a class="contact-button" href="#">Contact Me</a></div>
+    </div>
+    <div class="home-section-image-container">
+      <img class="home-section-image"
+        src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1724001735/SAVE_20240620_224003-removebg-preview_kuixxx.png" />
+    </div>
+  </section>
+  <section id="About" class="about-section">
+    <h1>About Me</h1>
+    <h4>My Introduction</h4>
+    <div>
+      <div class="about-section-image-container">
+        <img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1724002776/1679990423287-01_htnyjo.jpg" />
+      </div>
+      <div class="about-section-details">
+        <h2>Full Stack Developer</h2>
+        <p>
+          I am a dedicated Developer and enthusiastic learner with strong
+          foundation in Full Stack development and hands-on experience through
+          projects. I'm passionate creating innovative solutions and eager to
+          contribute my skills to dynamic projects. I am proficient in
+          technologies such as React.js, Node.js, HTML, CSS, and Bootstrap,
+          which align perfectly with web development needs. My project works
+          has equipped me with practical problem-solving abilities, experience
+          working with APIs, and building responsive designs.
+        </p>
+        <div class="cv-button-container">
+          <a href="Vamsi Satya Sai.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Skills" class="skills-section">
+    <h1>Skills</h1>
+    <div class="skills-container">
+      <div class="frontend-skills-section">
+        <h3>Frontend</h3>
+        <ul>
+          <li><img src="react.png" />
+            <p>React Js</p>
+          </li>
+          <li><img src="html.png" />
+            <p>HTML</p>
+          </li>
+          <li><img src="css.png" />
+            <p>CSS</p>
+          </li>
+          <li><img src="bootstrap.png" />
+            <p>Bootstrap</p>
+          </li>
+          <li><img src="javascript.png" />
+            <p>JavaScript</p>
+          </li>
+        </ul>
+      </div>
+      <div class="backend-skills-section">
+        <h3>Backend</h3>
+        <ul>
+          <li><img src="nodejs.png" />
+            <p>NodeJs</p>
+          </li>
+          <li><img src="express.png" />
+            <p>ExpressJs</p>
+          </li>
+          <li><img src="python.png" /></i>
+            <p>Python</p>
+          </li>
+          <li><img src="mysql.png" />
+            <p>MySQL</p>
+          </li>
+        </ul>
+      </div>
+      <div class="tools-skills-section">
+        <h3>Tools</h3>
+        <ul>
+          <li><img src="github.png" />
+            <p>Github</p>
+          </li>
+          <li><img src="vscode.png" />
+            <p>Visual Studio Code</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="projects-section">
+    <h1>My Projects</h1>
+    <ul class="projects-list">
+      <li class="each-project">
+        <img src="Image provider.png" class="project-image" />
+        <div class="project-detail-container">
+          <h3>Free Images Provider</h3>
+          <ul class="project-skill-list">
+            <li>React Js</li>
+          </ul>
+          <button class="visit-button"><a href="https://magenta-rugelach-650272.netlify.app/">Visit</a></button>
+        </div>
+      </li>
+      <li class="each-project">
+        <img src="1on1 scheduler.png" class="project-image" />
+        <div class="project-detail-container">
+          <h3>1 on 1 Scheduler</h3>
+          <ul class="project-skill-list">
+            <li>React Js</li>
+            <li>NodeJs</li>
+            <li>MySQL</li>
+          </ul>
+          <button class="visit-button"><a
+              href="https://career-carve-frontend-psvxff8si-vamsis-projects-857c3320.vercel.app/">Visit</a></button>
+        </div>
+      </li>
+      <li class="each-project">
+        <img src="jobby.png" class="project-image" />
+        <div class="project-detail-container">
+          <h3>Jobby App</h3>
+          <ul class="project-skill-list">
+            <li>React Js</li>
+            <li>CSS</li>
+            <li>Rest API</li>
+          </ul>
+          <button class="visit-button"><a
+              href="https://findyourjobhere.ccbp.tech/">Visit</a></button>
+        </div>
+      </li>
+      <li class="each-project">
+        <img src="trendyshop.png" class="project-image" />
+        <div class="project-detail-container">
+          <h3>NXT Trends</h3>
+          <ul class="project-skill-list">
+            <li>React Js</li>
+            <li>CSS</li>
+            <li>Rest API</li>
+          </ul>
+          <button class="visit-button"><a
+              href="https://findyourjobhere.ccbp.tech/">Visit</a></button>
+        </div>
+      </li>
+    </ul>
+
+  </section>
+  <section id='contact' class="contact-section">
+    <h1>Contact ME</h1>
+    <div>
+      <div class="mobile"><p><i class="fa-solid fa-phone"></i></p><p>7981187288</p></div>
+      <div class="mobile"><p><i class="fa-solid fa-envelope"></i></p><p>vamsivanama61@gmail.com</p></div>
+      <div class="contact-icons">
+        <a class="linkedin-icon" href="https://www.linkedin.com/in/vamsi-vanama/"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="github-icon" href="https://github.com/VamsiSatyaSai"><i class="fa-brands fa-github"></i></a>
+        <a class="instagram-icon" href="https://www.instagram.com/vamsi__.44_/"><i class="fa-brands fa-instagram"></i></a>
+        <a class="whatsapp-icon" href="https://wa.me/7981187288"><i class="fa-brands fa-square-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script>
+    var typed = new Typed("#element", {
+      strings: [
+        "Frontend Developer",
+        "Backend Developer",
+        "Full Stack Developer",
+      ],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
