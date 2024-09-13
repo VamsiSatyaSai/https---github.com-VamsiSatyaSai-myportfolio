@@ -509,7 +509,7 @@ body {
 }
 .contact-icons{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .contact-icons a{
     width: 40px;
@@ -517,6 +517,8 @@ body {
     background-color: #ffffff;
     border-radius: 20px;
     margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
     font-size: 25px;
     display: flex;
     justify-content: center;
