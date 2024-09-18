@@ -269,12 +269,58 @@ body {
     justify-content: space-around;
     padding: 30px;
 }
-.about-section div{
-    display: flex;
-    justify-content: space-between;
+
+@media (max-width: 880px) {
+    .about-section {
+        width: 100%;
+    }
+    .about-section div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-section-image-container {
+        margin: 0px;
+    }
+
+    .about-section-details h2 {
+        font-family: 'poppins', sans-serif;
+        font-size: 22px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-self: flex-start;
+    }
+
+    .about-section-details p{
+        font-family: roboto;
+        font-size: 14px;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
 }
-.about-section-image-container {
-    margin-right: 100px;
+
+@media (min-width: 881px) {
+    .about-section div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-section-image-container {
+        margin-right: 100px;
+    }
+
+    .about-section-details h2 {
+        font-family: 'poppins', sans-serif;
+        font-size: 34px;
+        margin-bottom: 0px;
+        align-self: flex-start;
+    }
+
+    .about-section-details p{
+        font-family: roboto;
+        font-size: 18px;
+        text-align: justify;
+    }
 }
 .about-section-image-container img{
     width: 200px;
@@ -300,17 +346,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-.about-section-details h2 {
-    font-family: 'poppins', sans-serif;
-    font-size: 34px;
-    margin-bottom: 0px;
-    align-self: flex-start;
-}
-.about-section-details p{
-    font-family: roboto;
-    font-size: 18px;
-    text-align: justify;
-}
+
 .cv-button-container {
     width: 100%;
     display: flex;
@@ -371,20 +407,12 @@ body {
     margin-bottom: 15px;
 }
 
-.frontend-skills-section ul {
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-}
-
 .frontend-skills-section li{
     padding: 8px;
     background-color: #ffffff;
     margin-right: 10px;
     margin-bottom: 10px;
     border-radius: 8px;
-    width: 6.5rem;
-    height: 6.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -470,12 +498,6 @@ body {
     height: 2rem;
     width: 2rem;
 }
-.frontend-skills-section li p{
-    font-family: roboto;
-    font-size: 16px;
-    font-weight: 500;
-}
-
 
 .backend-skills-section {
     display: flex;
@@ -488,19 +510,13 @@ body {
     color: #ffffff;
     margin-bottom: 15px;
 }
-.backend-skills-section ul {
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-}
+
 .backend-skills-section li{
     padding: 8px;
     background-color: #ffffff;
     margin-right: 10px;
     margin-bottom: 10px;
     border-radius: 8px;
-    width: 6.5rem;
-    height: 6.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -536,11 +552,6 @@ body {
     height: 2rem;
     width: 3rem;
 }
-.backend-skills-section li p{
-    font-family: roboto;
-    font-size: 16px;
-    font-weight: 500;
-}
 
 .frontend-skills-section li:hover{
     transform: scale(1.1);
@@ -561,19 +572,12 @@ body {
     color: #ffffff;
     margin-bottom: 15px;
 }
-.tools-skills-section ul {
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-}
 .tools-skills-section li{
     padding: 8px;
     background-color: #ffffff;
     margin-right: 10px;
     margin-bottom: 10px;
     border-radius: 8px;
-    width: 6.5rem;
-    height: 6.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -596,15 +600,122 @@ body {
     height: 2.5rem;
     width: 2.5rem;
 }
-.tools-skills-section li p{
-    font-family: roboto;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-}
 
 .tools-skills-section li:hover{
     transform: scale(1.1);
+}
+
+
+@media (max-width: 880px) {
+    .frontend-skills-section ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .frontend-skills-section li{
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+
+    .frontend-skills-section li p{
+        font-family: poppins;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .backend-skills-section ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .backend-skills-section li{
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+
+    .backend-skills-section li p{
+        font-family: poppins;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .tools-skills-section ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .tools-skills-section li{
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+    .tools-skills-section li p{
+        font-family: poppins;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+@media (min-width: 881px) {
+    .frontend-skills-section ul {
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+    }
+
+    .frontend-skills-section li{
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+
+    .frontend-skills-section li p{
+        font-family: poppins;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .backend-skills-section ul {
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+    }
+
+    .backend-skills-section li{
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+
+    .backend-skills-section li p{
+        font-family: poppins;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .tools-skills-section ul {
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+    }
+    .tools-skills-section li{
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+
+    .tools-skills-section li p{
+        font-family: roboto;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+    }
+    
 }
 
 .projects-section {
