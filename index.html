@@ -23,6 +23,7 @@
 </head>
 
 <body>
+  <section id="navbar">
   <nav class="navbar navbar-expand navbar-light bg-light fixed-top">
     <h1 class="navbar-logo"><span>V</span>amsi.</h1>
     <ul class="navbar-list">
@@ -36,19 +37,28 @@
         <a class="nav-link" href="#Skills">Skills</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#Projects">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact Me</a>
+        <a class="nav-link" href="#Contact">Contact Me</a>
       </li>
     </ul>
+    <button class="toggle"><i class="fa-solid fa-bars"></i></button>
+    <div class="sub-menu">
+      <a href="#Home">Home</a>
+      <a href="#About">About</a>
+      <a href="#Skills">Skills</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Contact">Contact</a>
+    </div>
   </nav>
+  </section>
   <section id="Home" class="home-section">
     <div class="home-section-content-container">
-      <h1 class="home-section-title">Vamsi Satya Sai</h1>
-      <p>I'm a</p>
-      <span id="element"></span>
-      <div><a class="contact-button" href="#">Contact Me</a></div>
+      <h1 class="home-section-title">Hi There,</h1>
+      <h1 class="home-section-title1">Vamsi Satya Sai</h1>
+      <p>I'm a <span id="element"></span></p>
+      <div><a class="contact-button" href="#Contact">Contact Me</a></div>
     </div>
     <div class="home-section-image-container">
       <img class="home-section-image"
@@ -86,19 +96,19 @@
       <div class="frontend-skills-section">
         <h3>Frontend</h3>
         <ul>
-          <li><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160803/react_qtbc5o.png" />
+          <li class="item1"><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160803/react_qtbc5o.png" />
             <p>React Js</p>
           </li>
-          <li><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160802/html_ay8zik.png" />
+          <li class="item2"><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160802/html_ay8zik.png" />
             <p>HTML</p>
           </li>
-          <li><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160801/css_gkemq5.png" />
+          <li class="item3"><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160801/css_gkemq5.png" />
             <p>CSS</p>
           </li>
-          <li><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160801/bootstrap_cbftww.png" />
+          <li class="item4"><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160801/bootstrap_cbftww.png" />
             <p>Bootstrap</p>
           </li>
-          <li><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160802/javascript_t57kjn.png" />
+          <li class="item5"><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160802/javascript_t57kjn.png" />
             <p>JavaScript</p>
           </li>
         </ul>
@@ -106,16 +116,16 @@
       <div class="backend-skills-section">
         <h3>Backend</h3>
         <ul>
-          <li><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160802/nodejs_yxpoou.png" />
+          <li class="item6"><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160802/nodejs_yxpoou.png" />
             <p>NodeJs</p>
           </li>
-          <li><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160801/express_gavatv.png" />
+          <li class="item7"><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160801/express_gavatv.png" />
             <p>ExpressJs</p>
           </li>
-          <li><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160802/python_ulavxl.png" /></i>
+          <li class="item8"><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160802/python_ulavxl.png" /></i>
             <p>Python</p>
           </li>
-          <li><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160802/mysql_osykeu.png" />
+          <li class="item9"><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160802/mysql_osykeu.png" />
             <p>MySQL</p>
           </li>
         </ul>
@@ -123,17 +133,17 @@
       <div class="tools-skills-section">
         <h3>Tools</h3>
         <ul>
-          <li><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160801/github_hw1hi8.png" />
+          <li class="item10"><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160801/github_hw1hi8.png" />
             <p>Github</p>
           </li>
-          <li><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160803/vscode_aephwd.png" />
+          <li class="item11"><img src="https://res.cloudinary.com/dmkxsg5xs/image/upload/v1726160803/vscode_aephwd.png" />
             <p>Visual Studio Code</p>
           </li>
         </ul>
       </div>
     </div>
   </section>
-  <section id="projects" class="projects-section">
+  <section id="Projects" class="projects-section">
     <h1>My Projects</h1>
     <ul class="projects-list">
       <li class="each-project">
@@ -188,7 +198,7 @@
     </ul>
 
   </section>
-  <section id='contact' class="contact-section">
+  <section id='Contact' class="contact-section">
     <h1>Contact ME</h1>
     <div>
       <div class="mobile"><p><i class="fa-solid fa-phone"></i></p><p>7981187288</p></div>
@@ -212,7 +222,20 @@
         "Backend Developer",
         "Full Stack Developer",
       ],
-      typeSpeed: 50,
+      loop: true,
+      typeSpeed: 60,
+      backspeed: 100,
+      backDelay: 1000,
+    });
+
+    let subMenu = document.querySelector('.sub-menu');
+    window.addEventListener('click', (e)=> {
+      if(e.target.closest('.toggle')) {
+        subMenu.style.display = 'flex';
+      }
+      else{
+        subMenu.style.display = 'none';
+      }
     });
   </script>
 </body>
